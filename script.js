@@ -65,6 +65,11 @@ function criarCheckboxes() {
     checkbox.type = 'checkbox';
     checkbox.checked = false;
     checkbox.value = nome;
+
+    // Aplica o estilo de tachado e opacidade diretamente aqui
+    label.style.textDecoration = 'line-through';
+    label.style.opacity = '0.7'; // Opcional: para um leve destaque visual de "concluído"
+    
     label.appendChild(checkbox);
     label.appendChild(document.createTextNode(nome + " Férias"));
     containerCheck.appendChild(label);
