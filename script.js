@@ -10,7 +10,8 @@ const tempoValor = document.getElementById('tempoValor');
 const btnGirar = document.getElementById('btnGirar');
 const btnReset = document.getElementById('btnReset');
 
-const nomesPadrao = ['Weslei', 'Luiz', 'Anderson', 'Roberson', 'Rafael', 'Thainá', 'Henrique', 'Flavio', 'Fernando'];
+const nomesPadrao = ['Weslei', 'Luiz', 'Anderson', 'Roberson', 'Thainá', 'Henrique', 'Flavio', 'Fernando'];
+const nomesFerias = ['Rafael'];
 const NUM_EXTRA = 5; // checkboxes extras vazios
 
 const CORES_FIXAS = [
@@ -55,6 +56,17 @@ function criarCheckboxes() {
     checkbox.value = nome;
     label.appendChild(checkbox);
     label.appendChild(document.createTextNode(nome));
+    containerCheck.appendChild(label);
+  });
+
+  nomesFerias.forEach(nome => {
+    let label = document.createElement('label');
+    let checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.checked = false;
+    checkbox.value = nome;
+    label.appendChild(checkbox);
+    label.appendChild(document.createTextNode(nome + " Férias"));
     containerCheck.appendChild(label);
   });
 
