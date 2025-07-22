@@ -11,7 +11,7 @@ const btnGirar = document.getElementById('btnGirar');
 const btnReset = document.getElementById('btnReset');
 
 const nomesPadrao = ['Weslei', 'Luiz', 'Anderson', 'Roberson', 'Thainá', 'Henrique', 'Flavio', 'Fernando'];
-const nomesFerias = ['Rafael', 'Effting'];
+const nomesFerias = ['Rafael'];
 const NUM_EXTRA = 5; // checkboxes extras vazios
 
 const CORES_FIXAS = [
