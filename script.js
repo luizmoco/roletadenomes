@@ -123,7 +123,7 @@ function desenharRoletaComNomesSelecionados() {
   nomes = getNomesSelecionados();
   if (nomes.length < 2) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    nomeSorteado.textContent = '?';
+    nomeSorteado.textContent = 'Rolete de Nomes';
     return;
   }
   desenharRoleta();
@@ -349,7 +349,7 @@ function mostrarResultado(destino) {
 
   let index = Math.floor(anguloRelativo / anguloPorFatia) % total;
 
-  nomeSorteado.textContent = `Sorteado: ${nomes[index]}`;
+  nomeSorteado.textContent = `Parabéns ${nomes[index]}`;
   // Ativa o efeito visual
   efeitoZoomAtivo = true;
   zoomFrame = 0;
@@ -364,7 +364,7 @@ function easeOut(t) {
 function resetRoleta() {
   anguloAtual = 0;
   rodando = false;
-  nomeSorteado.textContent = '?';
+  nomeSorteado.textContent = 'Rolete de Nomes';
 
   criarCheckboxes();
   nomes = getNomesSelecionados();
