@@ -15,9 +15,23 @@ const nomesFerias = ['Peterson', 'Helio', 'Victor'];
 const NUM_EXTRA = 5; // checkboxes extras vazios
 
 const CORES_FIXAS = [
-  '#FF5733', '#33FF57', '#3357FF', '#FF33A8',
-  '#F1C40F', '#8E44AD', '#16A085', '#E67E22',
-  '#2C3E50', '#7F8C8D'
+  // Tons de Vermelho e Coral
+  '#FF5252', '#FF7F50', '#E53935', 
+  // Tons de Laranja e Amarelo
+  '#FFB300', '#FBC02D', '#FFA000', 
+  // Tons de Verde
+  '#4CAF50', '#66BB6A', '#2E7D32', '#1B5E20',
+  // Tons de Ciano e Turquesa
+  '#26A69A', '#00ACC1', '#00838F', 
+  // Tons de Azul
+  '#2196F3', '#1976D2', '#0D47A1', '#5C6BC0',
+  // Tons de Roxo e Violeta
+  '#9C27B0', '#8E24AA', '#6A1B9A', '#4A148C',
+  // Tons de Rosa e Magenta
+  '#EC407A', '#D81B60', '#AD1457',
+  // Tons de Marrom e Slate (Sóbrios)
+  '#8D6E63', '#6D4C41', '#4E342E',
+  '#546E7A', '#37474F', '#263238'
 ];
 
 let nomes = [];
