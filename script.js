@@ -10,8 +10,8 @@ const tempoValor = document.getElementById('tempoValor');
 const btnGirar = document.getElementById('btnGirar');
 const btnReset = document.getElementById('btnReset');
 
-const nomesPadrao = ['Italo', 'Flavio', 'Henrique', 'Luiz', 'Marcos', 'Rafael', 'Raphael', 'Vandrei', 'Anderson', 'Thaina', 'Roberson'];
-const nomesFerias = ['Peterson', 'Helio', 'Victor'];
+const nomesPadrao = ['Italo', 'Flavio', 'Henrique', 'Luiz', 'Marcos', 'Rafael', 'Raphael', 'Vandrei', 'Anderson', 'Thaina', 'Roberson', 'Peterson'];
+const nomesFerias = ['Helio', 'Victor'];
 const NUM_EXTRA = 5; // checkboxes extras vazios
 
 const CORES_FIXAS = [
