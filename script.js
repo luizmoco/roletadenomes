@@ -10,8 +10,9 @@ const tempoValor = document.getElementById('tempoValor');
 const btnGirar = document.getElementById('btnGirar');
 const btnReset = document.getElementById('btnReset');
 
-const nomesPadrao = ['Italo', 'Flavio', 'Henrique', 'Luiz', 'Marcos', 'Rafael', 'Raphael', 'Vandrei', 'Anderson', 'Thaina', 'Roberson', 'Peterson'];
+const nomesPadrao = ['Italo', 'Flavio', 'Henrique', 'Luiz', 'Marcos', 'Raphael', 'Vandrei', 'Anderson', 'Thaina', 'Roberson', 'Peterson'];
 const nomesFerias = ['Helio', 'Victor'];
+const licenca = ['Rafael'];
 const NUM_EXTRA = 5; // checkboxes extras vazios
 
 const CORES_FIXAS = [
@@ -86,6 +87,22 @@ function criarCheckboxes() {
     
     label.appendChild(checkbox);
     label.appendChild(document.createTextNode(nome + " Férias"));
+    containerCheck.appendChild(label);
+  });
+
+  licenca.forEach(nome => {
+    let label = document.createElement('label');
+    let checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.checked = false;
+    checkbox.value = nome;
+
+    // Aplica o estilo de tachado e opacidade diretamente aqui
+    label.style.textDecoration = 'line-through';
+    label.style.opacity = '0.7'; // Opcional: para um leve destaque visual de "concluído"
+    
+    label.appendChild(checkbox);
+    label.appendChild(document.createTextNode(nome + " Licença"));
     containerCheck.appendChild(label);
   });
 
