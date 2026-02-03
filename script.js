@@ -75,6 +75,10 @@ function criarCheckboxes() {
     containerCheck.appendChild(label);
   });
 
+  // Verificamos se hoje é segunda-feira (0 = Domingo, 1 = Segunda, ...)
+  const hoje = new Date();
+  const diaSemana = hoje.getDay();
+
   if (diaSemana != 1) {
     ausenciaSegundaFeira.forEach(nome => {
       let label = document.createElement('label');
@@ -119,10 +123,6 @@ function criarCheckboxes() {
     label.appendChild(document.createTextNode(nome + " Licença"));
     containerCheck.appendChild(label);
   });
-
-  // Verificamos se hoje é segunda-feira (0 = Domingo, 1 = Segunda, ...)
-  const hoje = new Date();
-  const diaSemana = hoje.getDay();
 
   if (diaSemana === 1) {
     ausenciaSegundaFeira.forEach(nome => {
